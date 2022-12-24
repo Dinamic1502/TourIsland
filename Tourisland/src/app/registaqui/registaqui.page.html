@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registrar Taquillero</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img src='../../assets/img/Registrar.jpg'>
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Correo Electronico"  type="email"></ion-input>
+      </ion-item>
+    <ion-item>
+    <ion-input placeholder="Nombres"  type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Apellidos"  type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Identificacion"  type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+    <ion-input placeholder="Ingrese Contraseña" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Confirme Contraseña" type="password"></ion-input>
+      </ion-item>
+    
+    <section>
+      <header></header>
+      <ion-button expand="block" [routerLink]="['/inicio']" routerLinkActive="router-link-active" >Registrar</ion-button>
+      
+    </section>
+  </ion-card>
+</ion-content>

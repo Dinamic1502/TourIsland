@@ -1,0 +1,51 @@
+<ion-header>
+
+  <section>
+    
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active">Salir</a>
+  
+  </section>
+  
+  <ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form [formGroup]="clientForm">
+  <img src='../../assets/img/Registrar.jpg'>
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Correo Electronico"  type="email" formControlName="email"></ion-input>
+      </ion-item>
+    <ion-item>
+    <ion-input placeholder="Nombres"  type="text" formControlName="nombres"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Apellidos"  type="text" formControlName="apellidos"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Identificacion"  type="text" formControlName="identificacion"></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-input placeholder="Telefono"  type="text" formControlName="telefono"></ion-input>
+        </ion-item>
+        <ion-item>
+    <ion-input placeholder="Direccion"  type="text" formControlName="direccion"></ion-input>
+    </ion-item>
+    <ion-item>
+    <ion-input placeholder="Ingrese Contraseña" type="password" formControlName="contrasena"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Confirme Contraseña" type="password" formControlName="contraselaconfir"></ion-input>
+      </ion-item>
+    
+    <section>
+      <header></header>
+      <ion-button expand="block" (click)="guardar()" routerLinkActive="router-link-active" >Registrar</ion-button>
+      
+    </section>
+  </ion-card>
+</form>
+</ion-content>

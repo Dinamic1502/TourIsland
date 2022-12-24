@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>reservar</ion-title>
+  </ion-toolbar>
+
+  <section>
+    
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active">Salir</a>
+  
+  </section>
+</ion-header>
+
+<ion-content>
+
+  <form>
+   
+  <ion-card>
+    <ion-item>
+      <ion-input placeholder="Correo Electronico"  type="email"></ion-input>
+      </ion-item>
+    <ion-item>
+    <ion-input placeholder="Nombres"  type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Apellidos"  type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Identificacion"  type="number"></ion-input>
+        </ion-item>
+      <ion-item>
+        <ion-input placeholder="Telefono"  type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+    <ion-input placeholder="Fecha de Ingreso"  type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="fecha de Salida"  type="date"></ion-input>
+      </ion-item>
+
+      <br>
+      <br>
+       <section>
+      <header></header>
+      <ion-button (click)="presentAlert()" >Reservar</ion-button>
+    </section>
+  </ion-card>
+  <app-menu></app-menu>
+
+</form>
+ 
+      </ion-content>
+      
+
+
+      

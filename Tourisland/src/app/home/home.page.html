@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="welcome">
+      Bienvenido tu aventura
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tour Island</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+  <ion-menu side="start" menuId="first" contentId="main">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Start Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+ 
+</ion-menu>
+
+
+
+  <app-login></app-login>
+
+<br>
+<ion-button shape="round" (click)="goto()">Entrar</ion-button>
+<br>
+    <strong [routerLink]="['/registrarse']" routerLinkActive="router-link-active">Registrarse </strong>
+    </div>
+</ion-content>

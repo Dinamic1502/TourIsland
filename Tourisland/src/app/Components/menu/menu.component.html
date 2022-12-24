@@ -1,0 +1,20 @@
+  <ion-menu side="end" type="push" contentId="main">
+  <ion-conten>
+      <ion-toolbar color="danger">
+      <ion-title>Menu Principal</ion-title>
+      </ion-toolbar>
+      <ion-list>
+        <ion-item [routerLink]="['/inicio']" routerLinkActive="router-link-active">Inicio</ion-item>
+        <ion-item [routerLink]="['/reservar']" routerLinkActive="router-link-active">Reservar</ion-item>
+        <ion-item [routerLink]="['/conocenos']" routerLinkActive="router-link-active">Conocenos</ion-item>
+        <ion-item [routerLink]="['/restaurantes']" routerLinkActive="router-link-active">Restaurantes</ion-item>
+        <ion-item [routerLink]="['/hoteles']" routerLinkActive="router-link-active">Hoteles</ion-item>
+        <ion-item [routerLink]="['/playas']" routerLinkActive="router-link-active">Playas</ion-item>
+        <ion-item [routerLink]="['/ubicacion']" routerLinkActive="router-link-active">Como llegar</ion-item>
+        <ion-item [routerLink]="['/contactar']" routerLinkActive="router-link-active">Contactos</ion-item>
+        <ion-item [routerLink]="['/home']" routerLinkActive="router-link-active">Cerrar Sesion</ion-item>
+      </ion-list>
+    </ion-conten>
+  </ion-menu>
+
+  <ion-router-outlet id="main"></ion-router-outlet>

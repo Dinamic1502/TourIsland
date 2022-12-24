@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Administrador</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+      <ion-fab-button>
+        <ion-icon name="menu"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list>
+        <ion-fab-button color="luz" [routerLink]="['/registrarse']" routerLinkActive="router-link-active">
+          <ion-icon name="accessibility-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="luz" [routerLink]="['/reservar']" routerLinkActive="router-link-active">
+          <ion-icon name="clipboard-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="luz" [routerLink]="['/registaqui']" routerLinkActive="router-link-active">
+          <ion-icon name="person-add-outline"></ion-icon>
+        </ion-fab-button>
+          <ion-fab-button color="luz" [routerLink]="['/home']" routerLinkActive="router-link-active">
+          <ion-icon name="exit-outline"></ion-icon>
+        </ion-fab-button>
+        
+      </ion-fab-list>
+      
+    </ion-fab>
+    
+    <app-post-list></app-post-list>
+  
+    <ion-button expand="block" [routerLink]="['/consul-admin']" routerLinkActive="router-link-active" >Registrar</ion-button>
+      
+</ion-content>

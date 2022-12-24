@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Taquillero</ion-title>
+  </ion-toolbar>
+
+  <section>
+    
+    <a [routerLink]="['/home']" routerLinkActive="router-link-active">Salir</a>
+  
+  </section>
+
+</ion-header>
+<ion-content>
+  
+
+    <ion-fab horizontal="end" vertical="top" slot="fixed" edge>
+      <ion-fab-button>
+        <ion-icon name="menu"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list>
+        <ion-fab-button color="luz" [routerLink]="['/registrarse']" routerLinkActive="router-link-active">
+          <ion-icon name="accessibility-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="luz" [routerLink]="['/reservar']" routerLinkActive="router-link-active">
+          <ion-icon name="clipboard-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="luz" [routerLink]="['/home']" routerLinkActive="router-link-active">
+          <ion-icon name="exit-outline"></ion-icon>
+        </ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
+    
+  <ion-card>
+<h4>Reservas activas</h4>
+<ion-datetime locale="es-ES"></ion-datetime>
+<h4>Citas Pendientes</h4>
+<ion-card>
+<ion-item>
+    <ion-label>
+    <h2>Lucio Gonzales </h2>
+    <h3>Reserva 30-10-2022 </h3>
+    <ion-button color="success">Asistio</ion-button>
+    <ion-button color="danger">Falto</ion-button>
+    <ion-button color="warning">Cancelo</ion-button>
+  </ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>
+  <h2>Jesus Dario Panameño</h2>
+  <h3>Reserva 05-11-2022 </h3>
+  <ion-button color="success">Asistio</ion-button>
+  <ion-button color="danger">Falto</ion-button>
+  <ion-button color="warning">Cancelo</ion-button>
+</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>
+  <h2>Kevin Olave</h2>
+  <h3>Reserva 20-04-2022 </h3>
+  <ion-button color="success">Asistio</ion-button>
+  <ion-button color="danger">Falto</ion-button>
+  <ion-button color="warning">Cancelo</ion-button>
+</ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>
+  <h2>Selene castillo</h2>
+  <h3>Reserva 01-12-2022 </h3>
+  <ion-button color="success">Asistio</ion-button>
+  <ion-button color="danger">Falto</ion-button>
+  <ion-button color="warning">Cancelo</ion-button>
+</ion-label>
+</ion-item>
+</ion-card>
+</ion-card>
+</ion-content>
